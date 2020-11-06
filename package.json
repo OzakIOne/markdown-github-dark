@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/OzakIOne/markdown-github-dark"
     },
     "engines": {
         "vscode": "^1.51.0"
