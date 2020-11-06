@@ -13,9 +13,7 @@
     "categories": [
         "Other"
     ],
-    "activationEvents": [
-        "onCommand:markdown-github-dark.helloWorld"
-    ],
+    "activationEvents": [],
     "main": "./extension.js",
     "contributes": {
         "markdown.previewStyles": [
@@ -24,8 +22,7 @@
     },
     "scripts": {
         "lint": "eslint .",
-        "pretest": "npm run lint",
-        "test": "node ./test/runTest.js"
+        "pretest": "npm run lint"
     },
     "devDependencies": {
         "@types/vscode": "^1.51.0",
