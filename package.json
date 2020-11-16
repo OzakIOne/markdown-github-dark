@@ -2,7 +2,7 @@
     "name": "markdown-github-dark",
     "displayName": "markdown-github-dark",
     "description": "Replace markdown preview's theme with github's style but dark themed",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ozaki",
     "repository": {
         "type": "git",

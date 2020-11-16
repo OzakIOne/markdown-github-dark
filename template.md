@@ -76,3 +76,8 @@ My favorite browser is [Brave](https://brave.com "The best browser for privacy")
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
+
+<details>
+  <summary>Summary title</summary>
+  <div>Hidden description</div>
+</details>

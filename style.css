@@ -25,7 +25,9 @@ h2 {
 p,
 ul,
 li,
-summary {
+summary,
+span,
+div {
     color: #bdbdbd;
 }
 
