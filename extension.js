@@ -1,6 +1,6 @@
 const vscode = require("vscode");
 
-function activate(context) {
+function activate() {
     console.log("run");
 }
 exports.activate = activate;
