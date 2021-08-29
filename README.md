@@ -2,7 +2,9 @@
 
 Changes VS Code's built-in markdown preview to match Github's dark theme styling.
 
-![](https://github.com/OzakIOne/markdown-github-dark/raw/master/docs/example.png)
+![](https://github.com/OzakIOne/markdown-github-dark/raw/master/docs/preview.png)
+
+![](https://github.com/OzakIOne/markdown-github-dark/raw/master/docs/preview-advanced.png)
 
 > **❗️ Important**: This extension only styles the markdown preview. Use [this extension pack](https://marketplace.visualstudio.com/items?itemName=ozaki.markdown-github-dark) to add support for other github markdown features like `:emoji:` and `- [ ] tasklists`.
 
