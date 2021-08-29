@@ -1,22 +1,22 @@
 .vscode-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 40px;
-    border: 1px solid transparent;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid transparent;
 }
 
 .vscode-body blockquote {
-    background-color: initial;
+  background-color: initial;
 }
 
 .vscode-body code {
-    color: inherit;
+  color: inherit;
 }
 
 .vscode-body code > div {
-    background: none;
+  background: none;
 }
 
 .vscode-body.showEditorSelection .code-line .code-line:hover:before {
