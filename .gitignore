@@ -1,5 +1,8 @@
+out
 node_modules
 .vscode-test/
+*.log
 *.vsix
 .vscode/
+.DS_Store
 *.js

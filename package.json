@@ -1,39 +1,45 @@
 {
-    "name": "markdown-github-dark",
-    "displayName": "markdown-github-dark",
-    "description": "Replace markdown preview's theme with github's style but dark themed",
-    "version": "0.0.3",
-    "publisher": "ozaki",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/OzakIOne/markdown-github-dark"
-    },
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [],
-    "main": "./extension.js",
-    "contributes": {
-        "markdown.previewStyles": [
-            "./style.css"
-        ]
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "pretest": "npm run lint"
-    },
-    "devDependencies": {
-        "@types/vscode": "^1.51.0",
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.0.0",
-        "@types/node": "^12.11.7",
-        "eslint": "^7.9.0",
-        "glob": "^7.1.6",
-        "mocha": "^8.1.3",
-        "typescript": "^4.0.2",
-        "vscode-test": "^1.4.0"
-    }
+  "name": "markdown-github-dark",
+  "version": "0.1.0",
+  "displayName": "Dark Github Markdown Preview",
+  "description": "Replaces VS Code's markdown preview with Github's dark theme style",
+  "keywords": [
+    "markdown",
+    "markdown style",
+    "github",
+    "github markdown",
+    "style"
+  ],
+  "icon": "logo/logox128.png",
+  "publisher": "ozaki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OzakIOne/markdown-github-dark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OzakIOne/markdown-github-dark/issues"
+  },
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "markdown.previewStyles": [
+      "./base.css",
+      "./github-markdown.css",
+      "./node_modules/highlight.js/styles/github.css"
+    ]
+  },
+  "dependencies": {
+    "highlight.js": "^10.7.2"
+  },
+  "devDependencies": {
+    "github-markdown-css": "^4.0.0"
+  },
+  "scripts": {
+    "build": "node ./build/update-github-markdown-css.js"
+  }
 }
