@@ -15,3 +15,9 @@ Changes VS Code's built-in markdown preview to match Github's dark theme styling
 
 Please see the [VSCode Markdown Preview documentation](https://code.visualstudio.com/Docs/languages/markdown#_markdown-preview)
 for instructions on how to use this extension.
+
+```css
+:root {
+    --test: 1px;
+}
+```

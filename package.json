@@ -30,11 +30,11 @@
     "markdown.previewStyles": [
       "./base.css",
       "./github-markdown.css",
-      "./node_modules/highlight.js/styles/github.css"
+      "./node_modules/highlight.js/styles/github-dark.css"
     ]
   },
   "dependencies": {
-    "highlight.js": "^10.7.2"
+    "highlight.js": "^11.2.0"
   },
   "devDependencies": {
     "github-markdown-css": "^4.0.0"
