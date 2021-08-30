@@ -1,6 +1,6 @@
 {
   "name": "markdown-github-dark",
-  "version": "0.1.0",
+  "version": "0.0.4",
   "displayName": "Dark Github Markdown Preview",
   "description": "Replaces VS Code's markdown preview with Github's dark theme style",
   "keywords": [
