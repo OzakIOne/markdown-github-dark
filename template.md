@@ -11,19 +11,13 @@
 ###### Title
 
 -   First item
--   Second item
--   Third item
-    -   Indented item
     -   Indented item
         -   boring
             -   ye
 -   Fourth item
 
 1. First item
-2. Second item
-3. Third item
     1. Indented item
-    2. Indented item
         1. nice
             1. very cool isnt it
                 1. lol
