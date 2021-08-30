@@ -8,3 +8,4 @@ test/**
 **/*.map
 extension.js
 vsc-extension-quickstart.md
+node_modules/
