@@ -26,6 +26,8 @@
   "categories": [
     "Other"
   ],
+  "main": "./style.css",
+  "browser": "./style.css",
   "contributes": {
     "markdown.previewStyles": [
       "./style.css"
