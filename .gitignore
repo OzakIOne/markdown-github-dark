@@ -6,4 +6,5 @@ node_modules
 .vscode/
 .DS_Store
 *.js
+github-markdown.css
 !Gruntfile.js

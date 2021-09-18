@@ -9,3 +9,5 @@ test/**
 extension.js
 vsc-extension-quickstart.md
 node_modules/
+*.css
+!style.css

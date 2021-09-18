@@ -1,34 +1,59 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    copy: {
+      main: {
+        src: "node_modules/github-markdown-css/github-markdown.css",
+        dest: "github-markdown.css",
+        options: {
+          process: function (content) {
+            return (
+              content
+                .replace(/\.markdown-body/g, "body")
+                .replace(
+                  /@media\s*\(prefers-color-scheme:\s*dark\)\s*\{\n([\s\S]+)\n\}/,
+                  (_, darkMarkdownCss) => darkMarkdownCss.replace(/^  /m, "")
+                )
+            );
+          },
+        },
+      },
+    },
     cssmin: {
       options: {
         advanced: true,
+        format: "beautify",
         mergeAdjacent: true,
         removeDuplicates: true,
         shorthandCompacting: false,
       },
       files: {
-        src: "./github-markdown.css",
-        dest: "./github-markdown.min.css",
+        src: "github-markdown.css",
+        dest: "github-markdown.css",
       },
     },
-    postcss: {
+    concat: {
       options: {
-        processors: [
-          require("autoprefixer")({
-            browsers: ["last 2 versions", "Edge >= 12", "Explorer >= 9"],
-          }),
-          require("cssnano"),
-        ],
-        map: false,
+        separator: "\n\n",
+        process: function(content, srcpath) {
+          return `/* ${srcpath} */\n${content.trim()}`;
+        },
       },
-      files: {
-        src: "./github-markdown.css",
-        dest: "./github-markdown.min.css",
+      dist: {
+        src: [
+          "base.css",
+          "github-markdown.css",
+          "node_modules/highlight.js/styles/github-dark.css"
+        ],
+        dest: "style.css",
       },
     },
+    clean: [
+      "base.css",
+      "github-markdown.css"
+    ],
   });
+  grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.registerTask("css", ["cssmin", "postcss"]);
+  grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.registerTask("default", ["copy", "cssmin", "concat"]);
 };
