@@ -2,18 +2,11 @@ module.exports = function (grunt) {
   grunt.initConfig({
     copy: {
       main: {
-        src: "node_modules/github-markdown-css/github-markdown.css",
+        src: "node_modules/github-markdown-css/github-markdown-dark.css",
         dest: "github-markdown.css",
         options: {
           process: function (content) {
-            return (
-              content
-                .replace(/\.markdown-body/g, "body")
-                .replace(
-                  /@media\s*\(prefers-color-scheme:\s*dark\)\s*\{\n([\s\S]+)\n\}/,
-                  (_, darkMarkdownCss) => darkMarkdownCss.replace(/^  /m, "")
-                )
-            );
+            return content.replace(/\.markdown-body/g, "body");
           },
         },
       },
