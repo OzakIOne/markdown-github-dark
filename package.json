@@ -1,6 +1,6 @@
 {
   "name": "markdown-github-dark",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "displayName": "Dark Github Markdown Preview",
   "description": "Replaces VS Code's markdown preview with Github's dark theme style",
   "keywords": [
@@ -31,13 +31,19 @@
       "./style.css"
     ]
   },
-  "dependencies": {
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "cssnano": "^5.0.8",
+    "github-markdown-css": "^5.0.0",
+    "grunt": "^1.4.1",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
     "highlight.js": "^11.2.0"
   },
-  "devDependencies": {
-    "github-markdown-css": "^4.0.0"
-  },
   "scripts": {
-    "build": "node ./build/update-github-markdown-css.js"
+    "build": "npx grunt",
+    "vscode:prepublish": "npm run build"
   }
 }

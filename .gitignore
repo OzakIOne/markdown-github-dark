@@ -1,8 +1,11 @@
-out
-node_modules
+out/
+node_modules/
 .vscode-test/
+.vscode/
 *.log
 *.vsix
-.vscode/
-.DS_Store
 *.js
+!Gruntfile.js
+.DS_Store
+github-markdown.css
+package-lock.json
