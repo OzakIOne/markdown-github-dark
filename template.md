@@ -10,21 +10,21 @@
 
 ###### Title
 
--   First item
-    -   Indented item
-        -   boring
-            -   ye
--   Fourth item
+- First item
+  - Indented item
+    - boring
+      - ye
+- Fourth item
 
 1. First item
-    1. Indented item
-        1. nice
-            1. very cool isnt it
-                1. lol
-4. Fourth item
+   1. Indented item
+      1. nice
+         1. very cool isnt it
+            1. lol
+2. Second item
 
--   [ ] Not complete
--   [x] Completed
+- [ ] Not complete
+- [x] Completed
 
 > Some beautiful text wow such good
 >
@@ -58,10 +58,12 @@ At the command prompt, type `what ever the f u want`.
 | --------- | ----------- |
 | Header    | Title       |
 | Paragraph | Text        |
+| Header    | Title       |
+| Paragraph | Text        |
 
 ---
 
-My favorite browser is [Brave](https://brave.com "The best browser for privacy"). hover the link u'll get a cookie (no u dont)
+My favorite browser is [Brave](https://brave.com 'The best browser for privacy'). hover the link u'll get a cookie (no u dont)
 
 <https://www.markdownguide.org>
 
